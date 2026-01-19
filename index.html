@@ -66,6 +66,15 @@
             overflow: hidden !important;
         }
         
+        /* CRÍTICO: Ocultar permanentemente el checkbox FIJO vs INDEXADO en versión simplificada */
+        #powercup-indexed-comparison-checkbox {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            height: 0 !important;
+            overflow: hidden !important;
+        }
+        
         /* Estilos base y animaciones */
         body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
         #interactive.viewport { position: relative; width: 100%; height: auto; overflow: hidden; border-radius: 1rem; }
@@ -1587,7 +1596,8 @@
                 <!-- Content -->
                 <div class="p-6">
                     <!-- NUEVO: Checkbox para comparación con tarifas indexadas (SOLO POWER CUP) -->
-                    <div id="powercup-indexed-comparison-checkbox" class="hidden mb-6 p-4 bg-gradient-to-r from-blue-50 to-green-50 rounded-xl border-2 border-blue-200">
+                    <!-- OCULTO: Checkbox Comparar FIJO vs INDEXADO - Versión Simplificada -->
+                    <div id="powercup-indexed-comparison-checkbox" class="hidden mb-6 p-4 bg-gradient-to-r from-blue-50 to-green-50 rounded-xl border-2 border-blue-200" style="display: none !important;">
                         <label class="flex items-start gap-3 cursor-pointer group">
                             <input 
                                 type="checkbox" 
